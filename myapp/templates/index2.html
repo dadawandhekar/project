@@ -1,0 +1,499 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+    <!-- Content Scroll -->
+    <div
+        id="content-scroll">
+        <!-- Main -->
+        <div
+            id="main">
+            <!-- Hero Section -->
+            <div id="hero" class="has-slider">
+                <div id="hero-styles">
+                    <div id="hero-caption" class="content-max-width parallax-scroll-caption inline-title">
+                        <!-- Showcase Slider Holder -->
+                        {% comment %} <div id="showcase-slider-holder" data-pattern-img="{% static 'images/displacement/7.jpg' %}">
+                            <div id="showcase-slider" class="swiper-container">
+                                <div id="trigger-slides" class="swiper-wrapper">
+
+                                    <div class="swiper-slide" data-title="Opulence" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap active" data-slide="0"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#cf837d" data-firstline="View" data-secondline="Project">
+                                                        <span>Opulence</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project01.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-title="Sound Blaster" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap" data-slide="1"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#4c484f" data-firstline="View" data-secondline="Project">
+                                                        <span>Sound Blaster</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project02.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-title="Green Case" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap" data-slide="2"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#b54d35" data-firstline="View" data-secondline="Project">
+                                                        <span>Green Case</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project03.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-title="Tshirt Factory" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap" data-slide="3"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#6b91a1" data-firstline="View" data-secondline="Project">
+                                                        <span>Tshirt Factory</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project04.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide change-header" data-title="Pulse App" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap" data-slide="4"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#343434" data-firstline="View" data-secondline="Project">
+                                                        <span>Pulse App</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project05.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-title="Gold Man" data-subtitle="Subtitle Here">
+                                        <div class="slide-wrap" data-slide="5"></div>
+                                        <div class="outer content-max-width">
+                                            <div class="inner">
+                                                <div class="slide-title-wrapper">
+                                                    <div class="slide-title" data-color="#b08f4b" data-firstline="View" data-secondline="Project">
+                                                        <span>Gold Man</span>
+                                                    </div>
+                                                    <a class="slide-link" data-type="page-transition" href="project06.html"></a>
+                                                </div>
+                                                <div class="subtitle">
+                                                    <span>Subtitle Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                        <!-- Showcase Slider Holder -->
+
+                        <!-- Showcase Borders -->
+                        <div id="fixed-borders">
+                            <div class="caption-border left"></div>
+                            <div class="caption-border right"></div>
+                        </div>
+                        <!--/Showcase Borders -->
+
+                        <!-- canvas slider -->
+                        {% comment %} <div id="canvas-slider" class="canvas-slider"> {% endcomment %}
+                         <!--Carousel Wrapper-->
+                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+                            </ol>
+                            <div id="carrousel" class="carousel-inner">
+                                <!-- Carousel item  1 -->
+                                    <div data-pause="true" data-interval="10000" class="carousel-item active">
+                                        <div class="videoSlider">
+                                                <h1 class="mx-auto sliderTitle">Luxury Design</h1>
+                    
+                                                {% comment %} <h2 class="d-block sliderSubtitle">Slider Subtittle 1</h2> {% endcomment %}
+                    
+                                                <video width="100%" class="elVideo" loop="loop"  autoPlay playsInline muted src="{% static 'images/kitchen.mp4' %}" id='video-slider-1'>
+                                                </video>
+                                        </div>
+                                    </div>
+                                <!-- end of carousel item 1-->
+                                <!-- Carousel item  2 -->
+                                    <div data-pause="true" data-interval="10000" class="carousel-item">
+                                        <div class="videoSlider">
+                                                <h1 class="mx-auto sliderTitle">Experience Furnish Luxury</h1>
+                    
+                                                {% comment %} <h2 class="d-block sliderSubtitle">Slider Subtittle 2</h2> {% endcomment %}
+                    
+                                                <video width="100%" class="elVideo" loop="loop"  autoPlay playsInline muted src="{% static 'images/video1.mp4' %}" id='video-slider-2'>
+                                                </video>
+                                        </div>
+                                    </div>
+                                <!-- end of carousel item 2-->
+                                <!-- Carousel item  3 -->
+                                <div data-pause="true" data-interval="10000" class="carousel-item">
+                                    <div class="videoSlider">
+                                            <h1 class="mx-auto sliderTitle">Perfect Color Combination</h1>
+                    
+                                            {% comment %} <h2 class="d-block sliderSubtitle">Slider Subtittle 3</h2> {% endcomment %}
+                    
+                                            <video width="100%" class="elVideo" loop="loop"  autoPlay playsInline muted src="{% static 'images/kitchen.mp4' %}" id='video-slider-3'>
+                                            </video>
+                                    </div>
+                                </div>
+                            <!-- end of carousel item 3-->
+                            
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="" aria-hidden="true"></span>
+                            </a>
+                            <div class="container-fluid containerVideobg">
+                                <video width="100%" class="videoSliderBackground" loop="loop" autoPlay playsInline muted src="https://ak.picdn.net/shutterstock/videos/1022398360/preview/stock-footage-night-starry-skies-with-twinkling-or-blinking-stars-motion-background-looping-seamless-space.webm" id="video-slider-background" ></video>
+                            </div>
+    
+                         <!--/.Carousel Wrapper-->
+                         </div>
+                        <!--/canvas slider -->
+
+                        <!-- Showcase Pagination -->
+                        <div class="showcase-pagination-wrap">
+                            <div class="showcase-pagination"></div>
+                        </div>
+                        <!--/Showcase Pagination -->
+
+                        <div id="hero-footer">
+                            <div class="hero-footer-left">
+                                <div class="button-wrap left disable-drag swiper-prev">
+                                    <div class="icon-wrap parallax-wrap">
+                                        <div class="button-icon parallax-element">
+                                            <i class="fa fa-angle-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="button-text sticky left">
+                                        <span data-hover="Prev Slide">Prev Slide</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-footer-right">
+                                <div class="button-wrap right disable-drag swiper-next">
+                                    <div class="icon-wrap parallax-wrap">
+                                        <div class="button-icon parallax-element">
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="button-text sticky right">
+                                        <span data-hover="Next Slide">Next Slide</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Hero Section -->
+    <!-- ======= On Focus Section ======= -->
+        <hr>
+    <section id="onfocus" class="onfocus">
+        <div class="container-fluid p-0" style="background-color:#CCCCCC;" data-aos="fade-up">
+  
+          <div class="row g-0">
+            <div class="col-lg-6 position-relative">
+                <img src="{% static 'images/04img.jpg' %}" class="img-test" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="content d-flex flex-column justify-content-center h-100">
+                <h3>MANUFACTURING EXCELLENCE, ALL UNDER ONE ROOF</h3>
+                <p class="fst-italic">
+                    AIDW started with an interest in customised furniture and has grown into a leading modular furniture manufacturing company in India.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> AIDW goes beyond just manufacturing.</li>
+                  <li><i class="bi bi-check-circle"></i> Production characterised by unrivalled quality, top-notch finishes and timeless elegance for each of its client's needs.</li>
+                  <li><i class="bi bi-check-circle"></i> Power to deliver more than expected, we offer customised modular solutions with best-in-class quality and after-sales services.</li>
+                </ul>
+                <div class="clapat-button-wrap parallax-wrap hide-ball">
+                    <div class="clapat-button parallax-element">
+                        <div class="button-border rounded parallax-element-second" data-btncolor="#2b2a35" data-btntextcolor="#fff">
+                            <a class="ajax-link" data-type="page-transition" href="about.html">
+                                <span data-hover="Read More">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End On Focus Section -->
+            <!-- Main Content -->
+            <hr/>            
+            <div id="main-content">
+                <div class="content-row text-align-center light-section" data-bgcolor="#fafafa">
+                    <h5 class="has-animation gray-color"><u class="dash">OUR PRODUCT</u></h5>
+                    <p>We provide innovative and customised modular solutions that meet your purpose.</p>
+                </div>
+                <!-- Main Page Content -->
+                <div id="main-page-content" class="content-max-width">                  
+                    <!-- Row -->
+                    <div class="content-row full light-section" data-bgcolor="#fafafa">
+                        <!-- Portfolio Wrap -->
+                        <div id="itemsWrapperLinks" class="portfolio-wrap spaced-grid fade-scaleout-effect">
+                            <!-- Portfolio Columns -->
+                            <div id="itemsWrapper" class="portfolio webgl-fitthumbs">
+                                
+                                {% for img in product %}
+                                {{img.product_name.id}}
+                                    {% if forloop.counter == 1 %}
+                                        <div class="item trigger-item branding design">
+                                            <div class="item-parallax">
+                                                <div class="item-appear">
+                                                    <div class="item-content">
+                                                        <a class="item-wrap ajax-link-project" data-type="page-transition" href="{% url 'product_categories' img.product_name.id %}"></a>
+                                                        <div class="item-wrap-image" data-color="#cf837d">
+                                                            <img src="{{ img.product_img.url }}" class="item-image grid__item-img trigger-item-link" alt=""/>
+                                                        </div>
+                                                        <img class="grid__item-img grid__item-img--large" src="{{ img.product_img.url }}" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="item-caption-wrapper">
+                                                    <div class="item-caption">
+                                                        <div class="item-title product-font">
+                                                            {{ img.product_name }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                {% for img in product %}
+                                {{img.product_name}}
+                                    {% if forloop.counter == 2 %}
+                                        <div class="item trigger-item design photo">
+                                            <div class="item-parallax">
+                                                <div class="item-appear">
+                                                    <div class="item-content">
+                                                        <a class="item-wrap ajax-link-project" data-type="page-transition" href="{% url 'product_categories' img.product_name.id %}"></a>
+                                                        <div class="item-wrap-image" data-color="#4c484f">
+                                                            <img src="{{ img.product_img.url }}" class="item-image grid__item-img trigger-item-link" alt=""/>
+                                                        </div>
+                                                        <img class="grid__item-img grid__item-img--large" src="{{ img.product_img.url }}" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="item-caption-wrapper">
+                                                    <div class="item-caption">
+                                                        <div class="item-title product-font">
+                                                            {{ img.product_name }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                {% for img in product %}
+                                {{img.product_name}}
+                                    {% if forloop.counter == 3 %}
+                                        <div class="item trigger-item design photo wide">
+                                            <div class="item-parallax">
+                                                <div class="item-appear">
+                                                    <div class="item-content">
+                                                        <a class="item-wrap ajax-link-project" data-type="page-transition" href="{% url 'product_categories' img.product_name.id %}"></a>
+                                                        <div class="item-wrap-image" data-color="#b54d35">
+                                                            <img src="{{ img.product_img.url }}" class="item-image grid__item-img trigger-item-link" alt=""/>
+                                                        </div>
+                                                        <img class="grid__item-img grid__item-img--large" src="{{ img.product_img.url }}" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="item-caption-wrapper">
+                                                    <div class="item-caption">
+                                                        <div class="item-title product-font">
+                                                            {{ img.product_name }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+
+                            <!--/Portfolio -->
+                        </div>
+                        <!--/Portfolio Wrap -->
+                    </div>
+                    <hr>
+                    <!--/Row -->
+                    <!-- Row -->
+                    {% comment %} <div class="content-row row_padding_bottom text-align-center light-section" data-bgcolor="#fafafa">
+                        <div class="button-box has-animation" data-delay="100">
+                            <div class="clapat-button-wrap parallax-wrap hide-ball">
+                                <div class="clapat-button parallax-element">
+                                    <div class="button-border rounded parallax-element-second" data-btncolor="#2b2a35" data-btntextcolor="#fff">
+                                        <a class="ajax-link" data-type="page-transition" href="{% url 'gallary' %}">
+                                            <span data-hover="View all projects">View all projects</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                                                                                                                                                                                                                                                      
+                    </div> 
+                    <!--/Row --> {% endcomment %}
+                    <!--/Row -->
+                    <div class="content-row text-align-center light-section" data-bgcolor="#fafafa">
+                        <h5 class="has-animation gray-color"><u class="dash">OUR PROJECTS</u></h5>
+                        <p>End-to-end furniture manufacturing solutions right from designing to production to installation, for hotels, residences, offices and institutes.</p>
+                    </div>
+                    <!-- Row -->
+                    <!-- row-->
+                    <div class="container mt-5 mb-5">
+                        <div class="d-flex justify-content-center row">
+                            <div class="col-md-10">
+                                {% for item in project %}
+                                <div class="row p-2 bg-white border rounded">
+                                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="{{ item.project_img.url }}"></div>
+                                    <div class="col-md-6 mt-1">
+                                        <h5>{{ item.project_name }}</h5>
+                                        <hr>
+                                        <div class="d-flex flex-row">
+                                            <div class="ratings mr-2"><i class="fa-solid fa-dash fa-beat" style="color: #99b5e5;"></i></div>
+                                        </div>
+                                        <p class="text-justify text-truncate para mb-0 text-wrap">{{ item.project_description }}</p>
+                                    </div>
+                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                        <div class="d-flex flex-column mt-4"><a href="{% url 'project_details' item.project_name %}" class="btn btn-outline-primary btn-lg mt-4" type="button">Read More</a></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    
+                    <!--row -->
+                    <hr>
+                    <div class="content-row text-align-center light-section" data-bgcolor="#fafafa">
+                        <h5 class="has-animation gray-color"><u class="dash">OUR CLIENTS</u></h5>
+                        <h1 class="big-title has-animation">
+                            Relations
+                            <span class="secondary-font">based on trust</span>
+                        </h1>
+                    </div>
+                    <!--/Row -->
+                    <!-- Row -->
+                    <div
+                        class="content-row row_padding_bottom light-section" data-bgcolor="#fafafa">
+                        <!-- Clients Table -->
+                        <ul class="clients-table no-borders has-animation" data-delay="100">
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-01.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-02.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-03.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-04.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-05.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-06.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-07.png' %}" alt="client"/></a>
+                            </li>
+                            <li class="link">
+                                <a target="_blank" href="https://themeforest.net/user/clapat/portfolio"><img src="{% static 'images/client-08.png' %}" alt="client"/></a>
+                            </li>
+                        </ul>
+                        <!--/Clients Table -->
+                    </div>
+                    <!--/Row -->
+                    <hr>
+                    <!-- Row -->
+                    <div class="content-row small row_padding_bottom text-align-center row_padding_top light-section" data-bgcolor="#fff">
+                        <h5 class="has-animation gray-color"><u class="dash">GET IN TOUCH</u></h5>
+                        <h1 class="has-animation big-title" data-delay="150">
+                            More
+                            <span class="secondary-font">questions?</span>
+                        </h1>
+                        <hr/>
+                        <!-- Contact Formular -->
+                        <div id="contact-formular">
+                            <div id="message"></div>
+                            <form method="post" action="contact.php" name="contactform" id="contactform">
+                                <div class="name-box has-animation" data-delay="100">
+                                    <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"/><label class="input_label"></label>
+                                </div>
+                                <div class="email-box has-animation" data-delay="150">
+                                    <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"/><label class="input_label"></label>
+                                </div>
+                                <div class="message-box has-animation" data-delay="100">
+                                    <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project"></textarea>
+                                    <label class="input_label slow"></label>
+                                </div>
+                                <div class="button-box has-animation hide-ball" data-delay="100">
+                                    <div class="clapat-button-wrap parallax-wrap">
+                                        <div class="clapat-button parallax-element">
+                                            <div class="button-border rounded" data-btncolor="#2b2a35" data-btntextcolor="#fff">
+                                                <input type="submit" class="send_message" id="submit" value="Send Message"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--/Contact Formular -->
+                    </div>
+                    <!--/Row -->
+                </div>
+                <!--/Main Page Content -->
+            </div>
+            <!--/Main Content -->
+        </div>
+        <!--/Main -->
+
+        <script>
+
+        </script>
+
+    {% endblock body %}
+</div>
