@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+# settings.py
+from dotenv import load_dotenv
+load_dotenv()
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,8 +31,11 @@ SECRET_KEY = 'django-insecure-4vbrf6!(u48m!bc53owqksq5avuu%=k_(59=&2j!5%+%10wtal
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+# Or * to allow all
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -130,7 +138,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Add these new lines
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "myapp/static")]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "myapp/static")]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+#STATIC_ROOT = os.path.join(BASE_DIR,  'staticfiles')
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
