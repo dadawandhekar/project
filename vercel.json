@@ -22,7 +22,10 @@
       {
         "src": "/(.*)",
         "dest": "Client_website/wsgi.py"
-      }
+      },
+      {
+        "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    }
     ]
   }
   
