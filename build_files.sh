@@ -2,8 +2,8 @@
 pip install -r requirements.txt
 
 # make migrations
-python3.8.10 manage.py migrate 
-python3.8.10 manage.py collectstatic
+python manage.py migrate 
+python manage.py collectstatic
 
 #ddfjdfdfdfjdf
 
