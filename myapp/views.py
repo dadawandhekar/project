@@ -4,8 +4,11 @@ from .models import Product,Project,ProjectImage,ProductCategory,CreateProduct,P
 # Create your views here.
 
 def index(request):
-    product = Product.objects.distinct('product_name')
     project = Project.objects.all()
+    product=None
+    if project:
+        product = Product.objects.distinct('product_name')
+    
     context ={
         'project':project,
         'product':product   
