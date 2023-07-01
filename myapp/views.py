@@ -7,7 +7,7 @@ def index(request):
     project = Project.objects.all()
     product=None
     if project:
-        product = Product.objects.distinct('product_name')
+        product = Product.objects.all()
     
     context ={
         'project':project,
